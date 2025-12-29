@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    
+       <style>
+        header{
+            text-align:center;
+            padding:20px;
+           }
+           
+           main{display: grid;
+           grid-template-columns: 170px 1fr;
+           }
+           
+           nav,content{
+               border:1px solid gray;
+               height: 500px;
+           }
+           
+           nav{border-right:hidden;}
+      
+           nav ul{
+               line-height: 2;
+           }
+           
+           a:link,a:visited,a:active {color:black;
+           text-decoration:none;}
+           
+           a:hover{text-decoration-line:underline}
+           
+           #작가소개{
+               text-align: center;
+             padding-top:20px;
+             padding-bottom: 20px;
+             margin-top:0;
+             background-color: antiquewhite;
+           }
+           
+           #작가소개2{
+               padding-top:20px;
+               text-align: center;
+           }
+           
+           #artistimage{
+               border-radius:50%;
+           }
+           
+           footer{margin-top:10px;}
+           
+    </style>
+
+    </head>
+
+    <body>
+       <header>
+        <h1>Hututi World</h1>
+        </header>
+        
+        <main>
+        <nav>
+            <ul>
+                <li><a href="">작가소개</a></li>
+                <li>소설</li>
+                <li>갤러리</li>
+                <li>상품</li>
+                <li>블로그</li>
+                <li>게시판</li>
+            </ul>
+        </nav>
+        
+<content>
+    <h2 id="작가소개">작가소개</h2>
+               <div id="작가소개2">
+                <img src="후투티.png" width="200" alt="작가 이미지" id="artistimage">
+                <p>후투티</p>
+                <p>- OO플랫폼에서 ㅁㅁ작품 연재중</p>
+                </div>
+</content>
+        </main>
+               
+               
+            <footer>
+               <input id="night_day" type="button" value="night" onclick="
+         var target = document.querySelector('body');
+        if(document.querySelector('#night_day').value === 'night') {
+        target.style.backgroundColor='black';
+        target.style.color = 'white';
+        document.querySelector('#night_day').value = 'day';
+        } else {
+        target.style.backgroundColor='white';
+        target.style.color = 'black';
+        document.querySelector('#night_day').value = 'night';
+        }
+        ">
+        
+           &lt;-- 그닥 쓸모는 없지만 재밌는 버튼 
+            </footer>
+                
+    </body>
+</html>
+
